@@ -1,11 +1,13 @@
+/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable react/jsx-no-bind */
 import { useState } from "react";
-
+import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import QuestionPage from "./TestPage";
 import questions from "./assets/data";
 import AnswerPage from "./pages/Answer";
-
+import Mentions from "./pages/Mentions";
+import About from "./pages/About";
 import "./App.scss";
 
 function App() {
@@ -19,7 +21,12 @@ function App() {
   return (
     <div className="App">
       {pageVisible === undefined ? (
-        <Home setPageVisible={setPageVisible} />
+        <Routes>
+          <Route path="/" element={<Home setPageVisible={setPageVisible} />} />
+          <Route path="/mentions" element={<Mentions />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<About />} />
+        </Routes>
       ) : (
         ""
       )}
