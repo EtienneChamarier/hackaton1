@@ -1,6 +1,6 @@
-/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable react/jsx-no-bind */
 import { useState } from "react";
-import { Routes, Route, useNavigate } from "react-router-dom";
+
 import Home from "./pages/Home";
 import QuestionPage from "./TestPage";
 import questions from "./assets/data";
@@ -9,34 +9,40 @@ import AnswerPage from "./pages/Answer";
 import "./App.css";
 
 function App() {
-  const navigate = useNavigate();
   const [promptAnswers, setPromptAnswers] = useState([]);
+  const [pageVisible, setPageVisible] = useState();
+  function handleRestartClick() {
+    setPageVisible();
+    setPromptAnswers([]);
+  }
 
   return (
     <div className="App">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        {questions.map((question, index) => {
-          return (
-            <Route
-              path={`/${index}`}
-              element={
-                <QuestionPage
-                  setPromptAnswers={setPromptAnswers}
-                  answers={question}
-                  index={index}
-                  navigate={navigate}
-                />
-              }
-            />
-          );
-        })}
-        <Route
-          path="/your-next-destination"
-          element={<AnswerPage promptAnswers={promptAnswers} />}
-        />
-      </Routes>
+      {pageVisible === undefined ? (
+        <Home setPageVisible={setPageVisible} />
+      ) : (
+        ""
+      )}
+      {questions.map((question, index) => {
+        return (
+          <QuestionPage
+            setPromptAnswers={setPromptAnswers}
+            answers={question}
+            index={index}
+            pageVisible={pageVisible}
+            setPageVisible={setPageVisible}
+          />
+        );
+      })}
 
+      {pageVisible === 5 ? (
+        <AnswerPage
+          promptAnswers={promptAnswers}
+          handleRestartClick={handleRestartClick}
+        />
+      ) : (
+        ""
+      )}
       {/* <QuestionPage promptAnswers={promptAnswers} answers={answers} />
       <QuestionPage promptAnswers={promptAnswers} answers={answers2} /> */}
     </div>

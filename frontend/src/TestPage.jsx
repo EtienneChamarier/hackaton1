@@ -5,20 +5,21 @@ export default function QuestionPage({
   answers,
 
   setPromptAnswers,
-  navigate,
+  pageVisible,
+  setPageVisible,
   index,
 }) {
   const handleClick = (e) => {
     if (index <= 3) {
       console.info(e.target.innerText);
       setPromptAnswers((prevState) => [...prevState, e.target.innerText]);
-      navigate(`/${index + 1}`);
+      setPageVisible(index + 1);
     } else {
+      setPageVisible(5);
       setPromptAnswers((prevState) => [...prevState, e.target.innerText]);
-      navigate("/your-next-destination");
     }
   };
-  return (
+  return index === pageVisible ? (
     <div className="questionPage">
       <h2>{answers[0]}</h2>
       <div className="answers">
@@ -27,5 +28,7 @@ export default function QuestionPage({
         )}
       </div>
     </div>
+  ) : (
+    ""
   );
 }

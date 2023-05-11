@@ -1,11 +1,8 @@
-/* eslint-disable import/no-extraneous-dependencies */
-import { useNavigate } from "react-router-dom";
-
-export default function Home() {
-  const navigate = useNavigate();
+/* eslint-disable react/prop-types */
+export default function Home({ setPageVisible }) {
   return (
-    <button type="button" onClick={() => navigate("/0")}>
-      POET
+    <button type="button" onClick={() => setPageVisible(0)}>
+      DEMARRER
     </button>
   );
 }

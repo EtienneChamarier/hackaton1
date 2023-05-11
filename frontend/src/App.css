@@ -51,37 +51,44 @@ code {
   }
 }
 
+.App {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+}
 
 
 /* QUESTION PAGE */
 
 .questionPage {
+  width: 100%;
   background-color: white;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
  
 }
   
 
 .answers {
   display: flex;
-  height: 50vh;
+  min-height: 20vh;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-bottom: 5rem;
-  
+  justify-content: center;  
+ 
 }
 .questionPage h2 {
   text-align: center;
-  width: 60%;
-  margin: auto;
-  margin-top: 50%;
+  width: 80%;
+  margin-bottom: 4rem;  
+  
 }
-.questionPage button, .destinationPage button {
+
+button {
   width: 15rem;
   height: 4rem;
   border: none;
@@ -94,14 +101,18 @@ code {
   font-weight: 700;
   line-height: 34px;
   letter-spacing: 0.1em;
-  
-
+}
+.questionPage button {
+  margin-bottom: 2rem;
 }
 
 .questionPage button:hover, .destinationPage button:hover {
   scale: 1.1;
   transition: 300ms;
 }
+
+/* DESTINATION PAGE */
+
 .destinationPage {
   height: 100vh;
   display: flex;
@@ -109,6 +120,11 @@ code {
   align-items: center;
   justify-content: space-evenly;
   
+}
+
+
+.destinationPage button {
+  font-size: 1.5rem;
 }
 
 .destinationPage p {
