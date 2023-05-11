@@ -7,20 +7,23 @@
   box-sizing: border-box;
 }
 
-$font-dark: #2A2A2A;
-$font-light: #FFFFFF;
-$font-stack: "Inter",sans-serif;
-$color-accent: #00C092;
-$color-button: #FB8860;
+$font-dark: #2a2a2a;
+$font-light: #ffffff;
+$font-stack: "Inter", sans-serif;
+$color-accent: #00c092;
+$color-button: #fb8860;
 
 body {
   font-family: $font-stack;
 }
 
-/* QUESTION PAGE */
-.App {
-  background-color: #61dafb;
-}
+// .App {
+//   background-color: #61dafb;
+// }
+
+/* -------------------------------------------------------------------------- */
+/*                                   QUESTION PAGE                            */
+/* -------------------------------------------------------------------------- */
 
 .answers {
   height: 50vh;
@@ -28,7 +31,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  
 }
 .answers button {
   width: 6rem;
@@ -37,4 +39,192 @@ body {
   background-color: green;
   color: rgb(157, 2, 2);
   border-radius: 1rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   NAVBAR                                   */
+/* -------------------------------------------------------------------------- */
+
+.navbar {
+  z-index: 2;
+  width: 100vw;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.25));
+  img {
+    width: 20px;
+  }
+  h2 {
+    color: $font-dark;
+    font-size: 22px;
+    margin: 0.5rem;
+  }
+  .cross {
+    top: 3%;
+    right: 5%;
+    position: absolute;
+    width: 35px;
+  }
+  .logo {
+    margin-left: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-accent;
+    border-radius: 50%;
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+  .burger {
+    position: absolute;
+    right: 5%;
+  }
+}
+
+.menuBurger {
+  position: absolute;
+  right: 100%;
+  top: 0%;
+  height: 100vh;
+  transition: 350ms;
+  .burgerUl {
+    background-color: #ffffff;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    li {
+      font-size: 22px;
+      color: $font-dark;
+      font-weight: 600;
+      margin: 1.5rem;
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   FOOTER                                   */
+/* -------------------------------------------------------------------------- */
+
+footer {
+  background-color: $color-accent;
+  width: 100vw;
+  height: 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 4px;
+  align-items: center;
+  justify-items: center;
+  position: fixed;
+  bottom: 0%;
+  z-index: -1;
+  color: $font-dark;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 0.5rem;
+  
+  span {
+    font-size: 12px;
+    grid-area: 3 / 1 / 4 / 3;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   HOME                                     */
+/* -------------------------------------------------------------------------- */
+
+.homePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  .text {
+    margin-top: 3rem;
+    width: 80%;
+    color: $font-dark;
+    h2 {
+      font-size: 22px;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  }
+  }
+
+  .homeImg {
+    width: 100vw;
+    height: 10rem;
+    background: url("../src/assets/Home.jpg") no-repeat center/cover;
+    clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+  }
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    width: 14rem;
+    height: 2.5rem;
+    padding: 1rem;
+    background-color: $color-button;
+    color: #ffffff;
+    font-size: 22px;
+    border-radius: 10px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+  }
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   ABOUT                                    */
+/* -------------------------------------------------------------------------- */
+.aboutPage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .text {
+    margin-top: 3rem;
+    width: 80%;
+    color: $font-dark;
+    h2 {
+      font-size: 22px;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  }
+  .homeImg {
+    width: 100vw;
+    height: 10rem;
+    background: url("../src/assets/A_Propos.jpg") no-repeat center/cover;
+    clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+  }
+
+}
+/* -------------------------------------------------------------------------- */
+/*                                   MENTIONS                                 */
+/* -------------------------------------------------------------------------- */
+.mentionsPage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .text {
+    margin-top: 3rem;
+    width: 80%;
+    color: $font-dark;
+    h2 {
+      font-size: 22px;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  }
+  .mentionImg {
+    width: 100vw;
+    height: 10rem;
+    background: url("./src/assets/mentions_legales.jpg") no-repeat center/cover;
+    clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+  }
+
 }
