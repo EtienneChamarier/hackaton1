@@ -31,7 +31,6 @@
     "husky": "^8.0.3"
   },
   "dependencies": {
-    "browser-router": "^0.2.0",
     "openai": "^3.2.1",
     "sass": "^1.62.1"
   }
