@@ -7,6 +7,7 @@ import questions from "./assets/data";
 import AnswerPage from "./pages/Answer";
 
 import "./App.css";
+import "./App.scss";
 
 function App() {
   const [promptAnswers, setPromptAnswers] = useState([]);

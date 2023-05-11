@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+$font-dark: #2A2A2A;
+$font-light: #FFFFFF;
+$font-stack: "Inter",sans-serif;
+$color-accent: #00C092;
+$color-button: #FB8860;
+
+body {
+  font-family: $font-stack;
+}
+
+/* QUESTION PAGE */
+.App {
+  background-color: #61dafb;
+}
+
+.answers {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+.answers button {
+  width: 6rem;
+  height: 2rem;
+  border: none;
+  background-color: green;
+  color: rgb(157, 2, 2);
+  border-radius: 1rem;
+}
