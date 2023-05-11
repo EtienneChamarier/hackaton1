@@ -7,6 +7,9 @@ export default function AnswerPage({ promptAnswers, handleRestartClick }) {
       <button type="button" onClick={() => handleRestartClick()}>
         RECOMMENCER
       </button>
+      <div className="questionPageFooter">
+        &copy; 2023 Tripotevisor LLC Tous droits réservés
+      </div>
     </div>
   );
 }

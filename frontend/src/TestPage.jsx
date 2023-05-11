@@ -27,6 +27,9 @@ export default function QuestionPage({
           i > 0 ? <Button answer={answer} handleClick={handleClick} /> : ""
         )}
       </div>
+      <div className="questionPageFooter">
+        &copy; 2023 Tripotevisor LLC Tous droits réservés
+      </div>
     </div>
   ) : (
     ""
