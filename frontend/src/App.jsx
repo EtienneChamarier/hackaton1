@@ -1,27 +1,44 @@
+/* eslint-disable import/no-extraneous-dependencies */
+import { useState } from "react";
+import { Routes, Route, useNavigate } from "react-router-dom";
+import Home from "./pages/Home";
 import QuestionPage from "./TestPage";
 import questions from "./assets/data";
+import AnswerPage from "./pages/Answer";
+
 import "./App.css";
 
 function App() {
-  const promptAnswers = [];
-  function handleGenerateAnswer() {
-    console.info(
-      `Peux-tu me proposer 2 destinations, ${promptAnswers[0]} durant la période ${promptAnswers[1]}, plutôt ${promptAnswers[2]} proche de la ${promptAnswers[3]}, je souhaiterai profiter d'activité ${promptAnswers[4]}. Je ne veux pas d'introduction n'y de conclusion, le tout écris en maximum de trois lignes`
-    );
-  }
+  const navigate = useNavigate();
+  const [promptAnswers, setPromptAnswers] = useState([]);
 
   return (
     <div className="App">
-      {questions.map((question) => {
-        return (
-          <QuestionPage promptAnswers={promptAnswers} answers={question} />
-        );
-      })}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {questions.map((question, index) => {
+          return (
+            <Route
+              path={`/${index}`}
+              element={
+                <QuestionPage
+                  setPromptAnswers={setPromptAnswers}
+                  answers={question}
+                  index={index}
+                  navigate={navigate}
+                />
+              }
+            />
+          );
+        })}
+        <Route
+          path="/your-next-destination"
+          element={<AnswerPage promptAnswers={promptAnswers} />}
+        />
+      </Routes>
+
       {/* <QuestionPage promptAnswers={promptAnswers} answers={answers} />
       <QuestionPage promptAnswers={promptAnswers} answers={answers2} /> */}
-      <button type="button" onClick={handleGenerateAnswer}>
-        TEST
-      </button>
     </div>
   );
 }
