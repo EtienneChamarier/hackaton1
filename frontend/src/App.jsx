@@ -6,7 +6,7 @@ function App() {
   const promptAnswers = [];
   function handleGenerateAnswer() {
     console.info(
-      `Je sohaite aller en ${promptAnswers[0]}, plutôt ${promptAnswers[1]}, pendant la période ${promptAnswers[2]}`
+      `Peux-tu me proposer 2 destinations, ${promptAnswers[0]} durant la période ${promptAnswers[1]}, plutôt ${promptAnswers[2]} proche de la ${promptAnswers[3]}, je souhaiterai profiter d'activité ${promptAnswers[4]}. Je ne veux pas d'introduction n'y de conclusion, le tout écris en maximum de trois lignes`
     );
   }
 

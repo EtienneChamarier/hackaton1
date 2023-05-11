@@ -6,9 +6,9 @@ const questions = [
     "Océanie",
     "Afrique",
   ],
-  ["Vous êtes plutôt :", "Ville", "Nature"],
   ["Durant quelle période", "Estival", "Hivernal"],
-  ["Un paysage ?", "Montagneux", "Marin"],
+  ["Vous êtes plutôt :", "Ville", "Nature"],
+  ["Un paysage ?", "Montagne", "Mer"],
   [
     "Profiter de quelle type d'activités ?",
     "Sportive",
