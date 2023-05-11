@@ -6,7 +6,8 @@ import App from "./App";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
-  <React.StrictMode>
+  // eslint-disable-next-line react/jsx-no-useless-fragment
+  <>
     <App />
-  </React.StrictMode>
+  </>
 );

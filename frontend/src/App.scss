@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+$font-dark: #2A2A2A;
+$font-light: #FFFFFF;
+$font-stack: "Inter",sans-serif;
+$color-accent: #00C092;
+$color-button: #FB8860;
+
+body {
+  font-family: $font-stack;
+}
+
+/* QUESTION PAGE */
+.App {
+  background-color: #61dafb;
+}
+
+.answers {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+.answers button {
+  width: 6rem;
+  height: 2rem;
+  border: none;
+  background-color: green;
+  color: rgb(157, 2, 2);
+  border-radius: 1rem;
+}
+
+
+figure {
+  
+  // padding-left: 20%;
+  font-size: 2vh;
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  // align-content: space-around;
+  align-items: center;
+  justify-content: space-around;
+}
+figcaption {text-align: center;}
+
+#membre {
+  width: 100%;
+  background-color: red;
+  // padding-top: 30%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:10%;
+}
+
+#title{
+font-size: 100%;
+text-align: center;
+}
+
+.logo{
+  width: 40%;
+  display: flex;
+ justify-content: space-around;
+}
+
+#background_image{
+  clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+  
+}
+
