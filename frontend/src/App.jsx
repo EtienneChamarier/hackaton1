@@ -7,6 +7,7 @@ import questions from "./assets/data";
 import AnswerPage from "./pages/Answer";
 
 import "./App.scss";
+import Mentions from "./pages/Mentions";
 
 function App() {
   const [promptAnswers, setPromptAnswers] = useState([]);
@@ -43,8 +44,8 @@ function App() {
       ) : (
         ""
       )}
-      {/* <QuestionPage promptAnswers={promptAnswers} answers={answers} />
-      <QuestionPage promptAnswers={promptAnswers} answers={answers2} /> */}
+
+      <Mentions />
     </div>
   );
 }
