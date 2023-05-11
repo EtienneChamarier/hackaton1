@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
