@@ -71,7 +71,7 @@ code {
   height: 50vh;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin-bottom: 5rem;
   
 }
@@ -79,17 +79,23 @@ code {
   text-align: center;
   width: 60%;
   margin: auto;
-  margin-top: 40%;
+  margin-top: 50%;
 }
 .questionPage button, .destinationPage button {
-  width: 10rem;
+  width: 15rem;
   height: 4rem;
   border: none;
   background-color: #FB8860;
   color: white;
-  border-radius: 0.5rem;
-  font-size: larger;
+  border-radius: 0.5rem;  
   transition: 300ms;
+  font-family: sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: 0.1em;
+  
+
 }
 
 .questionPage button:hover, .destinationPage button:hover {

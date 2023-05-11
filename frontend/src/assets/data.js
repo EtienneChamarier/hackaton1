@@ -12,7 +12,7 @@ const questions = [
   [
     "Profiter de quelle type d'activités ?",
     "Sportive",
-    "Culturelle",
+    "Culturel",
     "Culinaire",
     "Reposante",
   ],
