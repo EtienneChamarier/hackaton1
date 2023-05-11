@@ -15,31 +15,101 @@ $color-button: #fb8860;
 
 body {
   font-family: $font-stack;
+  overflow-x: hidden;
 }
 
-// .App {
-//   background-color: #61dafb;
-// }
+.App {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-/* -------------------------------------------------------------------------- */
-/*                                   QUESTION PAGE                            */
-/* -------------------------------------------------------------------------- */
+}
+
+
+/* QUESTION PAGE */
+
+.questionPage {
+  width: 100%;
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+  
 
 .answers {
-  height: 50vh;
+  display: flex;
+  min-height: 20vh;
+  flex-direction: column;
+  justify-content: center;  
+ 
+}
+.questionPage h2 {
+  text-align: center;
+  width: 80%;
+  margin-bottom: 4rem;  
+  
+}
+
+.questionPage button {
+  width: 15rem;
+  height: 4rem;
+  border: none;
+  background-color: #FB8860;
+  color: white;
+  border-radius: 0.5rem;  
+  transition: 300ms;
+  font-family: sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: 0.1em;
+  margin-bottom: 2rem;
+}
+
+.questionPage button:hover, .destinationPage button:hover {
+  scale: 1.1;
+  transition: 300ms;
+}
+.questionPageFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  width: 100%;
+  height: 2rem;
+  background-color: #00C092;
+  position: fixed;
+  bottom: 0;
+}
+
+
+/* DESTINATION PAGE */
+
+.destinationPage {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
+  
+}
+
+
+.destinationPage button {
+  font-size: 1.5rem;
+}
+
+.destinationPage p {
+  width: 80%;  
+  color: #2A2A2A;  
   justify-content: space-around;
 }
-.answers button {
-  width: 6rem;
-  height: 2rem;
-  border: none;
-  background-color: green;
-  color: rgb(157, 2, 2);
-  border-radius: 1rem;
-}
+
 
 /* -------------------------------------------------------------------------- */
 /*                                   NAVBAR                                   */

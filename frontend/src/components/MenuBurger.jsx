@@ -1,8 +1,12 @@
+/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable react/prop-types */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 
+import { useNavigate } from "react-router-dom";
+
 function Burger({ open, setOpen }) {
+  const navigate = useNavigate();
   return (
     <div
       className="menuBurger"
@@ -15,10 +19,10 @@ function Burger({ open, setOpen }) {
         onClick={() => setOpen(!open)}
       />
       <ul className="burgerUl">
-        <li>A PROPOS</li>
-        <li>CONTACT</li>
-        <li>OFFRES D'EMPLOI</li>
-        <li>MENTIONS LEGALES</li>
+        <li onClick={() => navigate("/about")}>A PROPOS</li>
+        <li onClick={() => navigate("/contact")}>CONTACT</li>
+        <li onClick={() => navigate("/about")}>OFFRES D'EMPLOI</li>
+        <li onClick={() => navigate("/mentions")}>MENTIONS LEGALES</li>
       </ul>
     </div>
   );

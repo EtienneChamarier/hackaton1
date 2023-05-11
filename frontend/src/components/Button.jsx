@@ -2,7 +2,7 @@
 export default function Button({ handleClick, answer }) {
   return (
     <button type="button" onClick={handleClick}>
-      {answer}
+      {answer.toUpperCase()}
     </button>
   );
 }

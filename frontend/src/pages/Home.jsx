@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types */
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-function Home() {
+function Home({ setPageVisible }) {
   return (
     <div className="homePage">
       <Navbar />
@@ -21,7 +22,9 @@ function Home() {
           On vous propose les destinations idéales selon vos envie
         </p>
       </div>
-      <button type="button">DEMARRER</button>
+      <button type="button" onClick={() => setPageVisible(0)}>
+        DEMARRER
+      </button>
       <Footer />
     </div>
   );
