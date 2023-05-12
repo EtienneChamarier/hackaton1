@@ -251,7 +251,7 @@ footer {
     letter-spacing: 0.1em;
     
   }
-  .dora{ 
+.dora{ 
       position: relative;
       top:-2.5rem;
       left: 5.5rem;
@@ -260,9 +260,12 @@ footer {
       transition: 500ms;
       
     }
-  .doraButtonDiv:hover {
+.doraButtonDiv {
+      height: 2.5rem;
+    }
+.doraButtonDiv:hover {
     
-    .dora{
+.dora{
       top:-4.5rem;
       transition: 500ms;
     }
