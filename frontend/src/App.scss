@@ -15,7 +15,7 @@ $color-button: #fb8860;
 
 body {
   font-family: $font-stack;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 
 .App {
@@ -213,6 +213,9 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 43px;
+  padding-bottom: 8rem;
+  overflow: auto;
   height: 100vh;
   .text {
     margin-top: 3rem;
@@ -246,6 +249,11 @@ footer {
     border-radius: 10px;
     font-weight: 700;
     letter-spacing: 0.1em;
+    .dora{
+      position: relative;
+      z-index: -1;
+      height: 40px;
+    }
   }
 
 
@@ -256,6 +264,10 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 43px;
+  padding-bottom: 8rem;
+  overflow: auto;
+  height: 100vh;
   .text {
     margin-top: 3rem;
     width: 80%;
@@ -266,7 +278,7 @@ footer {
       margin-bottom: 2rem;
     }
   }
-  .homeImg {
+  .aboutImg {
     width: 100vw;
     height: 10rem;
     background: url("../src/assets/A_Propos.jpg") no-repeat center/cover;
@@ -280,7 +292,8 @@ footer {
 .mentionsPage{
   height: 100%;
   padding-top: 43px;
-  padding-bottom: 4rem;
+  padding-bottom: 8rem;
+  height: 100vh;
   overflow: auto;
   display: flex;
   flex-direction: column;
@@ -299,9 +312,46 @@ footer {
     width: 100vw;    
     clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
   }
-
 }
+/* -------------------------------------------------------------------------- */
+/*                                   OFFER                                    */
+/* -------------------------------------------------------------------------- */
 
+.offerPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 43px;
+  padding-bottom: 8rem;
+  height: 100vh;
+  overflow: auto;
+  .text {
+    margin-top: 3rem;
+    width: 80%;
+    color: $font-dark;
+    h2 {
+      font-size: 22px;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    span{
+      font-weight: 700;
+      text-decoration: underline;
+      color:$color-button
+    }
+  }
+  }
+
+  .offerImg {
+    width: 100vw;
+    height: 10rem;
+    background: url("../src/assets/Offer.jpg") no-repeat center/cover;
+    clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+  }
+
+/* -------------------------------------------------------------------------- */
+/*                                   CONTACT                                  */
+/* -------------------------------------------------------------------------- */
 
 figure {
   

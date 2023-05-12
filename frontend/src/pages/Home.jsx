@@ -24,6 +24,11 @@ function Home({ setPageVisible }) {
       </div>
       <button type="button" onClick={() => setPageVisible(0)}>
         DEMARRER
+        <img
+          alt="Dora l'exploratrice"
+          src="./src/assets/dora.png"
+          className="dora"
+        />
       </button>
       <Footer />
     </div>

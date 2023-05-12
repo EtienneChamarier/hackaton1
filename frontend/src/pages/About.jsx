@@ -8,7 +8,7 @@ function About() {
       <img
         alt="le mot hackaton"
         src="./src/assets/A_Propos.png"
-        className="homeImg"
+        className="aboutImg"
       />
       <div className="text">
         <h2>A propos du site</h2>
