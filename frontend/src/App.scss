@@ -15,7 +15,6 @@ $color-button: #fb8860;
 
 body {
   font-family: $font-stack;
-  // overflow-x: hidden;
 }
 
 .App {
@@ -182,7 +181,6 @@ footer {
   grid-column-gap: 0px;
   grid-row-gap: 4px;
   align-items: center;
-  justify-items: center;
   position: fixed;
   bottom: 0%;
   color: $font-dark;
@@ -205,7 +203,7 @@ footer {
   flex-direction: column;
   align-items: center;
   padding-top: 43px;
-  padding-bottom: 4rem;
+  padding-bottom: 8rem;
   overflow: auto;
   height: 100vh;
   .text {
@@ -240,48 +238,24 @@ button {
   border-radius: 10px;
   font-weight: 700;
   letter-spacing: 0.1em;
-  .dora {
-    position: relative;
-    z-index: -1;
-    height: 40px;
-  }
-  button {
-    display: flex;    
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-    width: 14rem;
-    height: 2.5rem;
-    padding: 1rem;
-    background-color: $color-button;
-    color: #ffffff;
-    font-size: 22px;
-    border-radius: 10px;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    
-  }
-.dora{ 
-      position: relative;
-      top:-2.5rem;
-      left: 5.5rem;
-      z-index: -1;
-      height: 40px;
-      transition: 500ms;
-      
-    }
+}
+.dora {
+  position: relative;
+  top: -2.5rem;
+  left: 5.5rem;
+  z-index: -1;
+  height: 40px;
+  transition: 500ms;
+}
 .doraButtonDiv {
-      height: 2.5rem;
-    }
+  height: 2.5rem;
+}
 .doraButtonDiv:hover {
-    
-.dora{
-      top:-4.5rem;
-      transition: 500ms;
-    }
+  .dora {
+    top: -4.5rem;
+    transition: 500ms;
   }
-
-
+}
 
 /* -------------------------------------------------------------------------- */
 /*                                   ABOUT                                    */
@@ -304,14 +278,13 @@ button {
       margin-bottom: 2rem;
     }
   }
-}
   .aboutImg {
     width: 100vw;
     height: 10rem;
     background: url("../src/assets/A_Propos.jpg") no-repeat center/cover;
     clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
   }
-
+}
 /* -------------------------------------------------------------------------- */
 /*                                   MENTIONS                                 */
 /* -------------------------------------------------------------------------- */
@@ -368,31 +341,34 @@ button {
   }
 }
 
-  .offerImg {
-    width: 100vw;
-    height: 10rem;
-    background: url("../src/assets/Offer.jpg") no-repeat center/cover;
-    clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
-  }
-  .poleEmploi:hover{
-    cursor: pointer;
-  }
+.offerImg {
+  width: 100vw;
+  height: 10rem;
+  background: url("../src/assets/Offer.jpg") no-repeat center/cover;
+  clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+}
+.poleEmploi:hover {
+  cursor: pointer;
+}
 /* -------------------------------------------------------------------------- */
 /*                                   CONTACT                                  */
 /* -------------------------------------------------------------------------- */
 
 figure {
   margin-top: 6vh;
+
   font-size: 2vh;
+
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
   align-items: center;
   justify-content: space-around;
 }
 figcaption {
-  margin: 0.5rem;
   font-size: 14px;
+  margin: 0.5rem;
   text-align: center;
 }
 
@@ -404,7 +380,7 @@ figcaption {
 }
 
 #title {
-  margin-top: 3rem;
+  margin-top: 2rem;
   font-size: 11px;
   text-align: center;
 }
@@ -423,9 +399,9 @@ figcaption {
 }
 
 .contact {
+  height: 100%;
   padding-top: 43px;
   padding-bottom: 8rem;
   height: 100vh;
   overflow: auto;
-}
 }
