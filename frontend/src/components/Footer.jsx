@@ -9,7 +9,7 @@ function Footer() {
   return (
     <footer>
       <p onClick={() => navigate("/about")}>A PROPOS</p>
-      <p onClick={() => navigate("/contact")}>OFFRES D'EMPLOIS</p>
+      <p onClick={() => navigate("/offer")}>OFFRES D'EMPLOIS</p>
       <p onClick={() => navigate("/contact")}>CONTACT</p>
       <p onClick={() => navigate("/mentions")}>MENTIONS LEGALES</p>
       <span>© 2023 Tripotevisor LLC Tous droits réservés.</span>
