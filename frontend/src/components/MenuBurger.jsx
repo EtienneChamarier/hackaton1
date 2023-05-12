@@ -19,9 +19,10 @@ function Burger({ open, setOpen }) {
         onClick={() => setOpen(!open)}
       />
       <ul className="burgerUl">
+        <li onClick={() => navigate("/")}>HOME</li>
         <li onClick={() => navigate("/about")}>A PROPOS</li>
         <li onClick={() => navigate("/contact")}>CONTACT</li>
-        <li onClick={() => navigate("/about")}>OFFRES D'EMPLOI</li>
+        <li onClick={() => navigate("/offer")}>OFFRES D'EMPLOI</li>
         <li onClick={() => navigate("/mentions")}>MENTIONS LEGALES</li>
       </ul>
     </div>

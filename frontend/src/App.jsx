@@ -8,6 +8,7 @@ import questions from "./assets/data";
 import AnswerPage from "./pages/Answer";
 import Mentions from "./pages/Mentions";
 import About from "./pages/About";
+import Offer from "./pages/Offer";
 import Contact from "./pages/Contact";
 import "./App.scss";
 
@@ -24,8 +25,9 @@ function App() {
       {pageVisible === undefined ? (
         <Routes>
           <Route path="/" element={<Home setPageVisible={setPageVisible} />} />
-          <Route path="/mentions" element={<Mentions />} />
           <Route path="/about" element={<About />} />
+          <Route path="/mentions" element={<Mentions />} />
+          <Route path="/offer" element={<Offer />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       ) : (
