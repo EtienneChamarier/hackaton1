@@ -361,7 +361,9 @@ footer {
     background: url("../src/assets/Offer.jpg") no-repeat center/cover;
     clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
   }
-
+  .poleEmploi:hover{
+    cursor: pointer;
+  }
 /* -------------------------------------------------------------------------- */
 /*                                   CONTACT                                  */
 /* -------------------------------------------------------------------------- */

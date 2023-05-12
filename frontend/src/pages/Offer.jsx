@@ -20,6 +20,7 @@ function Offer() {
           Par conséquent nous vous invitons à cliquer{" "}
           <span
             onClick={() => window.open("https://www.pole-emploi.fr/accueil/")}
+            className="poleEmploi"
           >
             ICI
           </span>
