@@ -7,7 +7,7 @@ function Mentions() {
       <Navbar />
       <img
         alt="l'allégorie de la justice"
-        src="./src/assets/mentions_legales.png"
+        src="src/assets/mentions_legales.jpg"
         className="mentionImg"
       />
       <div className="text">
@@ -20,7 +20,7 @@ function Mentions() {
           market. Téléphone : [numéro de téléphone] Email : [adresse e-mail] Le
           directeur de la publication est Thomas Fachinetti, agissant en qualité
           de gérant de la maquette figma. Le prestataire assurant le stockage
-          direct et permanent est jean-marc Millet, société à forme juridique
+          direct et permanent est Jean-marc Millet, société à forme juridique
           carré au capital de -24 euros, immatriculée au Registre du Commerce et
           des Sociétés deParis sous le numéro 666, dont le siège social est
           situé à non loin de la pharmacie.
