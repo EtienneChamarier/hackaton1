@@ -283,6 +283,10 @@ footer {
 /*                                   MENTIONS                                 */
 /* -------------------------------------------------------------------------- */
 .mentionsPage{
+  height: 100%;
+  padding-top: 43px;
+  padding-bottom: 4rem;
+  overflow: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -297,9 +301,7 @@ footer {
     }
   }
   .mentionImg {
-    width: 100vw;
-    height: 10rem;
-    background: url("./src/assets/mentions_legales.jpg") no-repeat center/cover;
+    width: 100vw;    
     clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
   }
 }
