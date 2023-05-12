@@ -16,12 +16,12 @@ function Mentions() {
           1. Informations légales Le présent site web est édité par
           Tripotevisor, société à forme juridique ronde au capital de 0 euros,
           immatriculée au Registre du Commerce et des Sociétés de Paris sous le
-          numéro 0000 dont le siège social est situé à pas loin de charli's
+          numéro 80085 dont le siège social est situé à pas loin de charli's
           market. Téléphone : [numéro de téléphone] Email : [adresse e-mail] Le
           directeur de la publication est Thomas Fachinetti, agissant en qualité
           de gérant de la maquette figma. Le prestataire assurant le stockage
           direct et permanent est Jean-marc Millet, société à forme juridique
-          carré au capital de -24 euros, immatriculée au Registre du Commerce et
+          carré au capital de 69 euros, immatriculée au Registre du Commerce et
           des Sociétés deParis sous le numéro 666, dont le siège social est
           situé à non loin de la pharmacie.
           <br />
