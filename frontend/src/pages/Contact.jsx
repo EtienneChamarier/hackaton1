@@ -5,7 +5,7 @@ import "../App.scss";
 
 import React from "react";
 
-function App() {
+function Contact() {
   return (
     <div>
       <div id="background_image">
@@ -118,4 +118,4 @@ function App() {
   );
 }
 
-export default App;
+export default Contact;
