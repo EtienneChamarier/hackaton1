@@ -13,7 +13,7 @@ function Offer() {
         className="offerImg"
       />
       <div className="text">
-        <h2>Nos offres d'emploie</h2>
+        <h2>Nos offres d'emplois</h2>
         <p>
           Nous n'avons aucune offre à proposer pour le moment. <br />
           <br />
