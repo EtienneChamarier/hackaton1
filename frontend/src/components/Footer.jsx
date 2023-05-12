@@ -8,7 +8,7 @@ function Footer() {
   const navigate = useNavigate();
   return (
     <footer>
-      <li onClick={() => navigate("/about")}>A PROPOS</li>
+      <p onClick={() => navigate("/about")}>A PROPOS</p>
       <p onClick={() => navigate("/contact")}>OFFRES D'EMPLOIS</p>
       <p onClick={() => navigate("/contact")}>CONTACT</p>
       <p onClick={() => navigate("/mentions")}>MENTIONS LEGALES</p>

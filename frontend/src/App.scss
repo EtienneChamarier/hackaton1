@@ -247,10 +247,9 @@ footer {
     font-weight: 700;
     letter-spacing: 0.1em;
     .dora{
-      position: absolute;
+      position: relative;
       z-index: -1;
       height: 40px;
-      top: 25%;
     }
   }
 
@@ -305,7 +304,7 @@ footer {
   }
 }
 /* -------------------------------------------------------------------------- */
-/*                                   Offer                                     */
+/*                                   OFFER                                    */
 /* -------------------------------------------------------------------------- */
 
 .offerPage {
@@ -336,3 +335,47 @@ footer {
     background: url("../src/assets/Offer.jpg") no-repeat center/cover;
     clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
   }
+
+/* -------------------------------------------------------------------------- */
+/*                                   CONTACT                                  */
+/* -------------------------------------------------------------------------- */
+
+figure {
+  
+  // padding-left: 20%;
+  font-size: 2vh;
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  // align-content: space-around;
+  align-items: center;
+  justify-content: space-around;
+}
+figcaption {text-align: center;}
+
+#membre {
+  width: 100%;
+  background-color: red;
+  // padding-top: 30%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:10%;
+}
+
+#title{
+font-size: 100%;
+text-align: center;
+}
+
+.logo{
+  width: 40%;
+  display: flex;
+ justify-content: space-around;
+}
+
+#background_image{
+  clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+  
+}
+
