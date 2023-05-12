@@ -23,9 +23,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
-
 
 /* QUESTION PAGE */
 
@@ -37,31 +35,27 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
- 
 }
-  
 
 .answers {
   display: flex;
   min-height: 20vh;
   flex-direction: column;
-  justify-content: center;  
- 
+  justify-content: center;
 }
 .questionPage h2 {
   text-align: center;
   width: 80%;
-  margin-bottom: 4rem;  
-  
+  margin-bottom: 4rem;
 }
 
 .questionPage button {
   width: 15rem;
   height: 4rem;
   border: none;
-  background-color: #FB8860;
+  background-color: #fb8860;
   color: white;
-  border-radius: 0.5rem;  
+  border-radius: 0.5rem;
   transition: 300ms;
   font-family: sans-serif;
   font-size: 1.8rem;
@@ -71,7 +65,8 @@ body {
   margin-bottom: 2rem;
 }
 
-.questionPage button:hover, .destinationPage button:hover {
+.questionPage button:hover,
+.destinationPage button:hover {
   scale: 1.1;
   transition: 300ms;
 }
@@ -82,11 +77,10 @@ body {
   font-weight: 600;
   width: 100%;
   height: 2rem;
-  background-color: #00C092;
+  background-color: #00c092;
   position: fixed;
   bottom: 0;
 }
-
 
 /* DESTINATION PAGE */
 
@@ -96,20 +90,17 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  
 }
-
 
 .destinationPage button {
   font-size: 1.5rem;
 }
 
 .destinationPage p {
-  width: 80%;  
-  color: #2A2A2A;  
+  width: 80%;
+  color: #2a2a2a;
   justify-content: space-around;
 }
-
 
 /* -------------------------------------------------------------------------- */
 /*                                   NAVBAR                                   */
@@ -193,12 +184,12 @@ footer {
   align-items: center;
   justify-items: center;
   position: fixed;
-  bottom: 0%;  
+  bottom: 0%;
   color: $font-dark;
   font-weight: 700;
   font-size: 14px;
   padding: 0.5rem;
-  
+
   span {
     font-size: 12px;
     grid-area: 3 / 1 / 4 / 3;
@@ -227,40 +218,39 @@ footer {
       margin-bottom: 2rem;
     }
   }
-  }
+}
 
-  .homeImg {
-    width: 100vw;
-    height: 10rem;
-    background: url("../src/assets/Home.jpg") no-repeat center/cover;
-    clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+.homeImg {
+  width: 100vw;
+  height: 10rem;
+  background: url("../src/assets/Home.jpg") no-repeat center/cover;
+  clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+}
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  width: 14rem;
+  height: 2.5rem;
+  padding: 1rem;
+  background-color: $color-button;
+  color: #ffffff;
+  font-size: 22px;
+  border-radius: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  .dora {
+    position: relative;
+    z-index: -1;
+    height: 40px;
   }
-  button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-    width: 14rem;
-    height: 2.5rem;
-    padding: 1rem;
-    background-color: $color-button;
-    color: #ffffff;
-    font-size: 22px;
-    border-radius: 10px;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    .dora{
-      position: relative;
-      z-index: -1;
-      height: 40px;
-    }
-  }
-
+}
 
 /* -------------------------------------------------------------------------- */
 /*                                   ABOUT                                    */
 /* -------------------------------------------------------------------------- */
-.aboutPage{
+.aboutPage {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -284,12 +274,11 @@ footer {
     background: url("../src/assets/A_Propos.jpg") no-repeat center/cover;
     clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
   }
-
 }
 /* -------------------------------------------------------------------------- */
 /*                                   MENTIONS                                 */
 /* -------------------------------------------------------------------------- */
-.mentionsPage{
+.mentionsPage {
   height: 100%;
   padding-top: 43px;
   padding-bottom: 8rem;
@@ -309,7 +298,7 @@ footer {
     }
   }
   .mentionImg {
-    width: 100vw;    
+    width: 100vw;
     clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
   }
 }
@@ -334,20 +323,20 @@ footer {
       text-align: center;
       margin-bottom: 2rem;
     }
-    span{
+    span {
       font-weight: 700;
       text-decoration: underline;
-      color:$color-button
+      color: $color-button;
     }
   }
-  }
+}
 
-  .offerImg {
-    width: 100vw;
-    height: 10rem;
-    background: url("../src/assets/Offer.jpg") no-repeat center/cover;
-    clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
-  }
+.offerImg {
+  width: 100vw;
+  height: 10rem;
+  background: url("../src/assets/Offer.jpg") no-repeat center/cover;
+  clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+}
 
 /* -------------------------------------------------------------------------- */
 /*                                   CONTACT                                  */
@@ -355,48 +344,48 @@ footer {
 
 figure {
   margin-top: 6vh;
-  // padding-left: 20%;
   font-size: 2vh;
-  // background-color: yellow;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  // align-content: space-around;
   align-items: center;
   justify-content: space-around;
 }
-figcaption {text-align: center;}
+figcaption {
+  margin: 0.5rem;
+  font-size: 14px;
+  text-align: center;
+}
 
 #membre {
   width: 100%;
-  // background-color: red;
-  // padding-top: 30%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap:10%;
+  gap: 10%;
 }
 
-#title{
+#title {
+  margin-top: 3rem;
   font-size: 11px;
   text-align: center;
-
 }
 
-.logo{
+.logo {
   width: 50%;
   display: flex;
- justify-content: space-between;
+  justify-content: space-between;
 }
 
-#background_image{
+#background_image {
   width: 100vw;
   height: 10rem;
   background: url("../src/assets/Contact.jpg") no-repeat center/cover;
   clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
 }
 
-.contact{
-  height: 100%;
-  padding-top:43px;
+.contact {
+  padding-top: 43px;
+  padding-bottom: 8rem;
+  height: 100vh;
+  overflow: auto;
 }
-

@@ -3,7 +3,6 @@
 // import QuestionPage from "./TestPage";
 // import questions from "./assets/data";
 import "../App.scss";
-// import contact from "./pages/contact";
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
