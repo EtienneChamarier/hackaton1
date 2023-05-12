@@ -3,7 +3,6 @@ import Button from "./components/Button";
 
 export default function QuestionPage({
   answers,
-
   setPromptAnswers,
   pageVisible,
   setPageVisible,
