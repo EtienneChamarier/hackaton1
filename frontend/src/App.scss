@@ -367,10 +367,10 @@ footer {
 /* -------------------------------------------------------------------------- */
 
 figure {
-  
+  margin-top: 6vh;
   // padding-left: 20%;
   font-size: 2vh;
-  background-color: yellow;
+  // background-color: yellow;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -382,7 +382,7 @@ figcaption {text-align: center;}
 
 #membre {
   width: 100%;
-  background-color: red;
+  // background-color: red;
   // padding-top: 30%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -390,18 +390,26 @@ figcaption {text-align: center;}
 }
 
 #title{
-font-size: 100%;
-text-align: center;
+  font-size: 11px;
+  text-align: center;
+
 }
 
 .logo{
-  width: 40%;
+  width: 50%;
   display: flex;
- justify-content: space-around;
+ justify-content: space-between;
 }
 
 #background_image{
+  width: 100vw;
+  height: 10rem;
+  background: url("../src/assets/Contact.jpg") no-repeat center/cover;
   clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
-  
+}
+
+.contact{
+  height: 100%;
+  padding-top:43px;
 }
 
