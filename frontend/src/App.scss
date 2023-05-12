@@ -214,7 +214,7 @@ footer {
   flex-direction: column;
   align-items: center;
   padding-top: 43px;
-  padding-bottom: 8rem;
+  padding-bottom: 4rem;
   overflow: auto;
   height: 100vh;
   .text {
@@ -236,7 +236,7 @@ footer {
     clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
   }
   button {
-    display: flex;
+    display: flex;    
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
@@ -249,12 +249,25 @@ footer {
     border-radius: 10px;
     font-weight: 700;
     letter-spacing: 0.1em;
-    .dora{
+    
+  }
+  .dora{ 
       position: relative;
+      top:-2.5rem;
+      left: 5.5rem;
       z-index: -1;
       height: 40px;
+      transition: 500ms;
+      
+    }
+  .doraButtonDiv:hover {
+    
+    .dora{
+      top:-4.5rem;
+      transition: 500ms;
     }
   }
+
 
 
 /* -------------------------------------------------------------------------- */

@@ -22,14 +22,17 @@ function Home({ setPageVisible }) {
           On vous propose les destinations idéales selon vos envie
         </p>
       </div>
-      <button type="button" onClick={() => setPageVisible(0)}>
-        DEMARRER
+      <div className="doraButtonDiv">
+        <button type="button" onClick={() => setPageVisible(0)}>
+          DEMARRER
+        </button>
         <img
           alt="Dora l'exploratrice"
           src="./src/assets/dora.png"
           className="dora"
         />
-      </button>
+      </div>
+
       <Footer />
     </div>
   );
